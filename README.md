@@ -8,6 +8,7 @@ Regexes use [the Rust `regex` crate](https://docs.rs/regex/latest/regex/). You c
 
 Add this to your `.pre-commit-config.yaml`:
 
+```
   - repo: https://github.com/timmmm/custom_regex_lint
     rev: v1.0.0
     hooks:
@@ -17,3 +18,4 @@ Add this to your `.pre-commit-config.yaml`:
         - "\\bREMOVE THIS\\b"
         - "--error-regex"
         - "\\bDO NOT COMMIT\\b"
+```
