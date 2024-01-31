@@ -1,0 +1,10 @@
+[package]
+name = "custom_regex_lint"
+version = "0.1.0"
+authors = ["Tim Hutt <tdhutt@gmail.com>"]
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0.79"
+clap = { version = "4.4.18", features = ["derive"] }
+regex = "1.10.3"

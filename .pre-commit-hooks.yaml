@@ -1,0 +1,7 @@
+-   id: custom_regex_lint
+    name: Custom Regex Lint
+    description: Ban text matching custom regexes
+    entry: custom_regex_lint
+    language: rust
+    types: [text]
+    exclude: '^.pre-commit-config.yaml$'
