@@ -14,8 +14,8 @@ Add this to your `.pre-commit-config.yaml`:
     hooks:
       - id: custom_regex_lint
         args:
-        - "--error-regex"
-        - "\\bREMOVE THIS\\b"
-        - "--error-regex"
-        - "\\bDO NOT COMMIT\\b"
+          - "--error-regex"
+          - "\\bREMOVE THIS\\b"
+          - "--error-regex"
+          - "\\bDO NOT COMMIT\\b"
 ```
