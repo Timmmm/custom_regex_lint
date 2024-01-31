@@ -13,7 +13,7 @@ Add this to your `.pre-commit-config.yaml`:
     rev: v1.0.0
     hooks:
       - id: custom_regex_lint
-      - args:
+        args:
         - "--error-regex"
         - "\\bREMOVE THIS\\b"
         - "--error-regex"
