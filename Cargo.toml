@@ -5,6 +5,9 @@ authors = ["Tim Hutt <tdhutt@gmail.com>"]
 edition = "2021"
 
 [dependencies]
-anyhow = "1.0.79"
-clap = { version = "4.4.18", features = ["derive"] }
-regex = "1.10.3"
+# Use exact version requirements because pre-commit doesn't use `--locked`.
+# See https://github.com/pre-commit/pre-commit/issues/3162
+# These versions are deliberately a bit old to support older Rust versions.
+anyhow = "=1.0.79"
+clap = { version = "=4.2.7", features = ["derive"] }
+regex = "=1.10.3"
